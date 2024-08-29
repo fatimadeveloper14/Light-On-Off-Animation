@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light On/Off Animation | M.A Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="left-side">
+            <h1>Light On/Off Bulb</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos mollitia consectetur ipsa, dolores similique itaque odio accusantium molestias veritatis repellendus quidem maxime repellat tenetur.</p>
+            <div class="btn-board">
+                <div class="on-off-btn">
+                    <div class="box" id="Btn"></div>
+                </div>
+            </div>
+        </div>
+
+       <div class="right-side">
+        <img src="images/light-ff.svg" alt="" class="light-off"/>
+        <img src="images/light-on.svg" alt="" class="light-on" id="LightOn"/>
+       </div>
+
+    </div>
+
+    <script>
+        var Btn = document.getElementById('Btn');
+        var LightOn = document.getElementById('LightOn');
+
+        Btn.addEventListener('click', function() {
+            Btn.classList.toggle('move');
+            LightOn.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
